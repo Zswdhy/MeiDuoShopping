@@ -1,0 +1,421 @@
+ERROR 2021-01-07 10:38:31,710 log 228 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\contrib\sessions\middleware.py", line 20, in process_request
+    request.session = self.SessionStore(session_key)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 17, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\cache\__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'session' in settings.CACHES
+ERROR 2021-01-07 10:38:31,714 basehttp 136 "GET / HTTP/1.1" 500 70274
+ERROR 2021-01-07 10:38:31,953 log 228 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\utils\deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\contrib\sessions\middleware.py", line 20, in process_request
+    request.session = self.SessionStore(session_key)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\contrib\sessions\backends\cache.py", line 17, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\cache\__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'session' in settings.CACHES
+ERROR 2021-01-07 10:38:31,954 basehttp 136 "GET /favicon.ico HTTP/1.1" 500 70176
+WARNING 2021-01-07 10:39:47,811 log 228 Not Found: /
+WARNING 2021-01-07 10:39:47,812 basehttp 136 "GET / HTTP/1.1" 404 2030
+WARNING 2021-01-07 10:39:47,887 log 228 Not Found: /favicon.ico
+WARNING 2021-01-07 10:39:47,888 basehttp 136 "GET /favicon.ico HTTP/1.1" 404 2081
+WARNING 2021-01-07 10:40:17,772 log 228 Not Found: /
+WARNING 2021-01-07 10:40:17,773 basehttp 136 "GET / HTTP/1.1" 404 2030
+WARNING 2021-01-07 10:41:20,741 log 228 Not Found: /
+WARNING 2021-01-07 10:41:20,741 basehttp 136 "GET / HTTP/1.1" 404 2030
+WARNING 2021-01-07 10:41:34,225 log 228 Not Found: /smscode/15225967756/
+WARNING 2021-01-07 10:41:34,226 basehttp 136 "GET /smscode/15225967756/ HTTP/1.1" 404 2108
+WARNING 2021-01-07 10:42:45,462 log 228 Not Found: /
+WARNING 2021-01-07 10:42:45,463 basehttp 136 "GET / HTTP/1.1" 404 2033
+WARNING 2021-01-07 10:42:50,267 log 228 Not Found: /app/
+WARNING 2021-01-07 10:42:50,269 basehttp 136 "GET /app/ HTTP/1.1" 404 2172
+WARNING 2021-01-07 10:43:05,154 log 228 Not Found: /app/smscode/15225967756/
+WARNING 2021-01-07 10:43:05,155 basehttp 136 "GET /app/smscode/15225967756/ HTTP/1.1" 404 2232
+WARNING 2021-01-07 10:47:40,404 log 228 Not Found: /
+WARNING 2021-01-07 10:47:40,405 basehttp 136 "GET / HTTP/1.1" 404 2033
+WARNING 2021-01-07 10:47:44,900 log 228 Not Found: /app/
+WARNING 2021-01-07 10:47:44,902 basehttp 136 "GET /app/ HTTP/1.1" 404 2170
+WARNING 2021-01-07 10:47:51,807 log 228 Not Found: /app/smscode/
+WARNING 2021-01-07 10:47:51,809 basehttp 136 "GET /app/smscode/ HTTP/1.1" 404 2194
+WARNING 2021-01-07 10:47:58,899 log 228 Not Found: /app/smscode/15225067756/
+WARNING 2021-01-07 10:47:58,900 basehttp 136 "GET /app/smscode/15225067756/ HTTP/1.1" 404 2230
+WARNING 2021-01-07 10:48:52,563 log 228 Not Found: /app/smscode/15225067756/
+WARNING 2021-01-07 10:48:52,564 basehttp 136 "GET /app/smscode/15225067756/ HTTP/1.1" 404 2230
+WARNING 2021-01-07 10:49:20,760 log 228 Not Found: /app/smscode/15225067756/
+WARNING 2021-01-07 10:49:20,761 basehttp 136 "GET /app/smscode/15225067756/ HTTP/1.1" 404 2230
+WARNING 2021-01-07 10:49:39,275 log 228 Not Found: /app/smscode/15225067756/
+WARNING 2021-01-07 10:49:39,276 basehttp 136 "GET /app/smscode/15225067756/ HTTP/1.1" 404 2230
+WARNING 2021-01-07 10:50:55,290 log 228 Not Found: /app/smscode/15225967756/
+WARNING 2021-01-07 10:50:55,291 basehttp 136 "GET /app/smscode/15225967756/ HTTP/1.1" 404 2230
+WARNING 2021-01-07 10:55:32,396 log 228 Not Found: /
+WARNING 2021-01-07 10:55:32,397 basehttp 136 "GET / HTTP/1.1" 404 2033
+WARNING 2021-01-07 10:55:41,714 log 228 Not Found: /app/
+WARNING 2021-01-07 10:55:41,715 basehttp 136 "GET /app/ HTTP/1.1" 404 2170
+WARNING 2021-01-07 10:55:49,254 log 228 Not Found: /app/smscode/
+WARNING 2021-01-07 10:55:49,255 basehttp 136 "GET /app/smscode/ HTTP/1.1" 404 2194
+WARNING 2021-01-07 10:56:14,011 log 228 Not Found: /app/smscode/11111111111/
+WARNING 2021-01-07 10:56:14,013 basehttp 136 "GET /app/smscode/11111111111/ HTTP/1.1" 404 2230
+INFO 2021-01-07 11:01:17,296 basehttp 136 "GET /app/smscode/ HTTP/1.1" 200 5138
+INFO 2021-01-07 11:01:17,334 basehttp 136 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2021-01-07 11:01:17,340 basehttp 136 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-01-07 11:01:17,340 basehttp 136 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-01-07 11:01:17,351 basehttp 136 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2021-01-07 11:01:17,351 basehttp 136 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-01-07 11:01:17,355 basehttp 136 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-01-07 11:01:17,357 basehttp 136 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2021-01-07 11:01:17,362 basehttp 136 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-01-07 11:01:17,408 basehttp 136 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2021-01-07 11:01:17,440 basehttp 136 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2021-01-07 11:01:17,447 basehttp 136 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2021-01-07 11:03:07,016 views 23 940651
+INFO 2021-01-07 11:03:07,237 basehttp 136 "GET /app/smscode/ HTTP/1.1" 200 5138
+WARNING 2021-01-07 11:07:45,597 log 228 Not Found: /app/smscode/12312312312
+WARNING 2021-01-07 11:07:45,598 basehttp 136 "GET /app/smscode/12312312312 HTTP/1.1" 404 2229
+WARNING 2021-01-07 11:07:58,131 log 228 Not Found: /app/smscode/12312312312
+WARNING 2021-01-07 11:07:58,132 basehttp 136 "GET /app/smscode/12312312312 HTTP/1.1" 404 2228
+WARNING 2021-01-07 11:08:32,337 log 228 Not Found: /app/smscode/12312312312
+WARNING 2021-01-07 11:08:32,339 basehttp 136 "GET /app/smscode/12312312312 HTTP/1.1" 404 2226
+WARNING 2021-01-07 11:09:18,866 log 228 Not Found: /app/smscode/12312312312/
+WARNING 2021-01-07 11:09:18,867 basehttp 136 "GET /app/smscode/12312312312/ HTTP/1.1" 404 2231
+WARNING 2021-01-07 11:10:37,307 log 228 Not Found: /app/smscode/12312312312/
+WARNING 2021-01-07 11:10:37,308 basehttp 136 "GET /app/smscode/12312312312/ HTTP/1.1" 404 2231
+WARNING 2021-01-07 11:11:03,923 log 228 Not Found: /app/smscode/12312312312/
+WARNING 2021-01-07 11:11:03,924 basehttp 136 "GET /app/smscode/12312312312/ HTTP/1.1" 404 2231
+WARNING 2021-01-07 11:12:06,850 log 228 Not Found: /app/smscode/12312312312/
+WARNING 2021-01-07 11:12:06,851 basehttp 136 "GET /app/smscode/12312312312/ HTTP/1.1" 404 2231
+INFO 2021-01-07 11:13:35,870 views 25 027632
+INFO 2021-01-07 11:13:35,888 basehttp 136 "GET /app/smscode/13212312323/ HTTP/1.1" 200 5210
+INFO 2021-01-07 11:13:55,074 views 25 991775
+INFO 2021-01-07 11:13:55,084 basehttp 136 "GET /app/smscode/15225967756/ HTTP/1.1" 200 5210
+INFO 2021-01-07 11:15:04,159 views 25 002964
+INFO 2021-01-07 11:15:04,354 basehttp 136 "GET /app/smscode/15225967756/ HTTP/1.1" 200 5210
+WARNING 2021-01-07 15:41:16,238 log 228 Not Found: /
+WARNING 2021-01-07 15:41:16,238 basehttp 136 "GET / HTTP/1.1" 404 2186
+WARNING 2021-01-07 15:41:26,395 log 228 Method Not Allowed: /user/
+WARNING 2021-01-07 15:41:26,395 basehttp 136 "GET /user/ HTTP/1.1" 405 8534
+INFO 2021-01-07 15:41:26,421 basehttp 136 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2021-01-07 15:41:26,422 basehttp 136 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2021-01-07 15:41:26,426 basehttp 136 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2021-01-07 15:41:26,428 basehttp 136 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2021-01-07 15:41:26,430 basehttp 136 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2021-01-07 15:41:26,432 basehttp 136 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2021-01-07 15:41:26,434 basehttp 136 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2021-01-07 15:41:26,434 basehttp 136 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2021-01-07 15:41:26,435 basehttp 136 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2021-01-07 15:41:26,435 basehttp 136 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2021-01-07 15:41:26,447 basehttp 136 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2021-01-07 15:41:59,093 log 228 Bad Request: /user/
+WARNING 2021-01-07 15:41:59,094 basehttp 136 "POST /user/ HTTP/1.1" 400 8838
+ERROR 2021-01-07 15:42:08,219 log 228 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\data\bilibili\MeiDuoShopping\MeiDuoShopping\apps\users\serializers.py", line 53, in validate
+    redis_conn = get_redis_connection('verify_code')
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django_redis\__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\cache\__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_code' in settings.CACHES
+ERROR 2021-01-07 15:42:08,223 basehttp 136 "POST /user/ HTTP/1.1" 500 124144
+WARNING 2021-01-07 15:43:13,380 log 228 Method Not Allowed: /user/
+WARNING 2021-01-07 15:43:13,381 basehttp 136 "GET /user/ HTTP/1.1" 405 8534
+WARNING 2021-01-07 15:43:24,559 log 228 Bad Request: /user/
+WARNING 2021-01-07 15:43:24,560 basehttp 136 "POST /user/ HTTP/1.1" 400 8581
+WARNING 2021-01-07 15:44:40,759 log 228 Not Found: /app2/order/
+WARNING 2021-01-07 15:44:40,760 basehttp 136 "GET /app2/order/ HTTP/1.1" 404 2237
+WARNING 2021-01-07 15:44:44,748 log 228 Not Found: /app/
+WARNING 2021-01-07 15:44:44,749 basehttp 136 "GET /app/ HTTP/1.1" 404 2324
+WARNING 2021-01-07 15:44:51,938 log 228 Not Found: /app/smscode/
+WARNING 2021-01-07 15:44:51,938 basehttp 136 "GET /app/smscode/ HTTP/1.1" 404 2348
+INFO 2021-01-07 15:44:58,431 views 31 097569
+WARNING 2021-01-07 15:45:02,432 log 228 Bad Request: /app/smscode/15225967756/
+WARNING 2021-01-07 15:45:02,433 basehttp 136 "GET /app/smscode/15225967756/ HTTP/1.1" 400 5250
+INFO 2021-01-07 15:46:57,723 views 31 482395
+INFO 2021-01-07 15:47:29,071 views 31 815696
+WARNING 2021-01-07 15:47:40,026 log 228 Bad Request: /app/smscode/15225967752/
+WARNING 2021-01-07 15:47:40,027 basehttp 136 "GET /app/smscode/15225967752/ HTTP/1.1" 400 5250
+INFO 2021-01-07 15:47:51,652 views 31 091122
+INFO 2021-01-07 15:49:40,139 views 25 None
+INFO 2021-01-07 15:49:40,139 views 32 337708
+INFO 2021-01-07 15:49:49,631 views 25 b'1'
+WARNING 2021-01-07 15:49:49,647 log 228 Bad Request: /app/smscode/15225967712/
+WARNING 2021-01-07 15:49:49,649 basehttp 136 "GET /app/smscode/15225967712/ HTTP/1.1" 400 5250
+INFO 2021-01-07 15:50:25,360 views 26 b'1'
+WARNING 2021-01-07 15:50:25,377 log 228 Bad Request: /app/smscode/15225967712/
+WARNING 2021-01-07 15:50:25,378 basehttp 136 "GET /app/smscode/15225967712/ HTTP/1.1" 400 5250
+WARNING 2021-01-07 15:51:50,251 log 228 Bad Request: /app/smscode/15225967712/
+WARNING 2021-01-07 15:51:50,252 basehttp 136 "GET /app/smscode/15225967712/ HTTP/1.1" 400 5250
+WARNING 2021-01-07 15:52:19,723 log 228 Bad Request: /app/smscode/15225967734/
+WARNING 2021-01-07 15:52:19,724 basehttp 136 "GET /app/smscode/15225967734/ HTTP/1.1" 400 5250
+WARNING 2021-01-07 15:53:08,262 log 228 Bad Request: /app/smscode/15225967456/
+WARNING 2021-01-07 15:53:08,263 basehttp 136 "GET /app/smscode/15225967456/ HTTP/1.1" 400 5250
+WARNING 2021-01-07 15:53:41,980 log 228 Bad Request: /app/smscode/15225967908/
+WARNING 2021-01-07 15:53:41,981 basehttp 136 "GET /app/smscode/15225967908/ HTTP/1.1" 400 5250
+WARNING 2021-01-07 15:54:30,644 log 228 Bad Request: /app/smscode/15225967967/
+WARNING 2021-01-07 15:54:30,645 basehttp 136 "GET /app/smscode/15225967967/ HTTP/1.1" 400 5250
+WARNING 2021-01-07 15:54:37,772 log 228 Bad Request: /app/smscode/15225967967/
+WARNING 2021-01-07 15:54:37,773 basehttp 136 "GET /app/smscode/15225967967/ HTTP/1.1" 400 5250
+ERROR 2021-01-07 15:56:17,560 log 228 Internal Server Error: /app/smscode/15225969999/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\data\bilibili\MeiDuoShopping\MeiDuoShopping\apps\verifications\views.py", line 20, in get
+    redis_conn = get_redis_connection('verify_codes')
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django_redis\__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\cache\__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verify_codes' in settings.CACHES
+ERROR 2021-01-07 15:56:17,563 basehttp 136 "GET /app/smscode/15225969999/ HTTP/1.1" 500 99886
+INFO 2021-01-07 15:56:38,738 views 32 712535
+ERROR 2021-01-07 15:56:38,851 log 228 Internal Server Error: /app/smscode/15225969999/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\data\bilibili\MeiDuoShopping\MeiDuoShopping\apps\verifications\views.py", line 41, in get
+    pl.setex('send_flag_%s' % mobile, constants.SEND_SMS_CODE_INTERVAL, 1)
+AttributeError: module 'verifications.constants' has no attribute 'SEND_SMS_CODE_INTERVAL'
+ERROR 2021-01-07 15:56:38,854 basehttp 136 "GET /app/smscode/15225969999/ HTTP/1.1" 500 93448
+INFO 2021-01-07 15:58:08,668 views 32 992634
+WARNING 2021-01-07 15:58:38,821 log 228 Bad Request: /app/smscode/15225969889/
+WARNING 2021-01-07 15:58:38,825 basehttp 136 "GET /app/smscode/15225969889/ HTTP/1.1" 400 5256
+WARNING 2021-01-07 15:58:56,103 log 228 Bad Request: /app/smscode/15225969889/
+WARNING 2021-01-07 15:58:56,104 basehttp 136 "GET /app/smscode/15225969889/ HTTP/1.1" 400 5256
+INFO 2021-01-07 15:59:04,433 views 32 615614
+INFO 2021-01-07 15:59:04,444 basehttp 136 "GET /app/smscode/15225969189/ HTTP/1.1" 200 5225
+INFO 2021-01-07 15:59:55,789 views 32 226554
+INFO 2021-01-07 15:59:55,806 basehttp 136 "GET /app/smscode/15225961234/ HTTP/1.1" 200 5279
+ERROR 2021-01-07 16:00:37,606 log 228 Internal Server Error: /user/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "E:\data\bilibili\MeiDuoShopping\MeiDuoShopping\apps\users\serializers.py", line 53, in validate
+    redis_conn = get_redis_connection('verifications')
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django_redis\__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\cache\__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'verifications' in settings.CACHES
+ERROR 2021-01-07 16:00:37,610 basehttp 136 "POST /user/ HTTP/1.1" 500 124175
+WARNING 2021-01-07 16:01:20,017 log 228 Method Not Allowed: /user/
+WARNING 2021-01-07 16:01:20,018 basehttp 136 "GET /user/ HTTP/1.1" 405 8534
+INFO 2021-01-07 16:01:26,732 views 32 987900
+INFO 2021-01-07 16:01:26,742 basehttp 136 "GET /app/smscode/15225961233/ HTTP/1.1" 200 5279
+INFO 2021-01-07 16:01:45,016 basehttp 136 "POST /user/ HTTP/1.1" 201 8557
+WARNING 2021-01-07 16:02:32,796 log 228 Method Not Allowed: /user/
+WARNING 2021-01-07 16:02:32,798 basehttp 136 "GET /user/ HTTP/1.1" 405 8534
+INFO 2021-01-07 16:03:52,082 views 32 506622
+INFO 2021-01-07 16:03:52,084 basehttp 136 "GET /app/smscode/15225967753/ HTTP/1.1" 200 58
+INFO 2021-01-07 16:04:05,539 basehttp 136 "POST /user/ HTTP/1.1" 201 53
+WARNING 2021-01-07 16:14:52,035 log 228 Method Not Allowed: /user/1231231321
+WARNING 2021-01-07 16:14:52,036 basehttp 136 "GET /user/1231231321 HTTP/1.1" 405 45
+WARNING 2021-01-07 16:15:30,191 log 228 Method Not Allowed: /user/1231231321/
+WARNING 2021-01-07 16:15:30,192 basehttp 136 "GET /user/1231231321/ HTTP/1.1" 405 45
+WARNING 2021-01-07 16:15:38,667 log 228 Method Not Allowed: /user/1231231321/
+WARNING 2021-01-07 16:15:38,668 basehttp 136 "GET /user/1231231321/ HTTP/1.1" 405 45
+WARNING 2021-01-07 16:15:39,463 log 228 Method Not Allowed: /user/1231231321/
+WARNING 2021-01-07 16:15:39,464 basehttp 136 "GET /user/1231231321/ HTTP/1.1" 405 45
+ERROR 2021-01-07 16:15:52,506 log 228 Internal Server Error: /user/1231231321/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2021-01-07 16:15:52,508 basehttp 136 "GET /user/1231231321/ HTTP/1.1" 500 83040
+ERROR 2021-01-07 16:16:05,123 log 228 Internal Server Error: /user/asasdasd1/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2021-01-07 16:16:05,125 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 500 83020
+ERROR 2021-01-07 16:16:07,365 log 228 Internal Server Error: /user/asasdasd1/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2021-01-07 16:16:07,367 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 500 83020
+ERROR 2021-01-07 16:16:09,066 log 228 Internal Server Error: /user/asasdasd1/
+Traceback (most recent call last):
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "E:\HaiYu\python_env\drfenv\lib\site-packages\rest_framework\views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2021-01-07 16:16:09,068 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 500 83020
+INFO 2021-01-07 16:16:26,718 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 200 4
+INFO 2021-01-07 16:16:47,061 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 200 4
+INFO 2021-01-07 16:17:05,854 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 200 4
+INFO 2021-01-07 16:18:18,052 basehttp 136 "GET /user/asasdasd1/ HTTP/1.1" 200 23
+INFO 2021-01-07 16:18:23,803 basehttp 136 "GET /user/david/ HTTP/1.1" 200 20
+INFO 2021-01-07 16:19:48,840 basehttp 136 "GET /user/david/ HTTP/1.1" 200 30
+INFO 2021-01-07 16:19:52,238 basehttp 136 "GET /user/daasasid/ HTTP/1.1" 200 33
+INFO 2021-01-07 16:24:34,026 basehttp 136 "GET /mobile/15225967756/ HTTP/1.1" 200 36
+INFO 2021-01-07 16:24:46,500 basehttp 136 "GET /mobile/15225961233/ HTTP/1.1" 200 36
+WARNING 2021-01-07 17:50:24,262 log 228 Not Found: /
+WARNING 2021-01-07 17:50:24,264 basehttp 136 "GET / HTTP/1.1" 404 2707
+INFO 2021-01-07 17:50:27,898 basehttp 136 "GET /login HTTP/1.1" 301 0
+WARNING 2021-01-07 17:50:27,936 log 228 Method Not Allowed: /login/
+WARNING 2021-01-07 17:50:27,937 basehttp 136 "GET /login/ HTTP/1.1" 405 7536
+WARNING 2021-01-07 17:50:38,631 log 228 Bad Request: /login/
+WARNING 2021-01-07 17:50:38,631 basehttp 136 "POST /login/ HTTP/1.1" 400 7579
+INFO 2021-01-07 17:50:43,637 basehttp 136 "POST /login/ HTTP/1.1" 200 7692
+WARNING 2021-01-07 17:51:01,576 log 228 Bad Request: /login/
+WARNING 2021-01-07 17:51:01,577 basehttp 136 "POST /login/ HTTP/1.1" 400 7583
+INFO 2021-01-07 17:51:12,391 basehttp 136 "POST /login/ HTTP/1.1" 200 7692
+WARNING 2021-01-08 10:36:39,324 log 228 Bad Request: /user/
+WARNING 2021-01-08 10:36:39,330 basehttp 136 "POST /user/ HTTP/1.1" 400 59
+WARNING 2021-01-08 10:37:27,423 log 228 Not Found: /
+WARNING 2021-01-08 10:37:27,425 basehttp 136 "GET / HTTP/1.1" 404 2707
+WARNING 2021-01-08 10:37:27,530 log 228 Not Found: /favicon.ico
+WARNING 2021-01-08 10:37:27,531 basehttp 136 "GET /favicon.ico HTTP/1.1" 404 2758
+WARNING 2021-01-08 10:37:33,048 log 228 Method Not Allowed: /login/
+WARNING 2021-01-08 10:37:33,049 basehttp 136 "GET /login/ HTTP/1.1" 405 7536
+INFO 2021-01-08 10:37:33,068 basehttp 136 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,068 basehttp 136 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,078 basehttp 136 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,078 basehttp 136 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,079 basehttp 136 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,079 basehttp 136 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,079 basehttp 136 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,079 basehttp 136 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,083 basehttp 136 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,084 basehttp 136 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-01-08 10:37:33,095 basehttp 136 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2021-01-08 10:37:41,446 log 228 Bad Request: /login/
+WARNING 2021-01-08 10:37:41,447 basehttp 136 "POST /login/ HTTP/1.1" 400 7579
+INFO 2021-01-08 10:38:15,491 basehttp 136 "POST /login/ HTTP/1.1" 200 7692
+INFO 2021-01-08 11:39:40,425 views 32 173672
+INFO 2021-01-08 11:39:40,426 basehttp 136 "GET /app/smscode/15225967777/ HTTP/1.1" 200 58
+INFO 2021-01-08 11:39:48,743 basehttp 136 "POST /user/ HTTP/1.1" 201 222
+INFO 2021-01-08 12:04:34,384 basehttp 136 "GET /user/daasasid/ HTTP/1.1" 200 33
+INFO 2021-01-08 12:05:16,623 basehttp 136 "GET /user/daasasid/ HTTP/1.1" 200 33
+INFO 2021-01-08 12:06:34,482 basehttp 136 "GET /user/daasasid/ HTTP/1.1" 200 33
