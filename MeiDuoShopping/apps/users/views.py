@@ -14,9 +14,9 @@ class UserView(CreateAPIView):
 # 此接口，仅返回 user 的数量，数量交付给前端，前端做处理，数量为1，已经存在，数量为0，不存在，可以注册
 class UsernameValidatePIView(APIView):
     def get(self, request, username):
-        print('query_params', request.query_params)
-        print('data', request.data)
-        print('parsers', request.parsers)
+        # print('query_params', request.query_params)
+        # print('data', request.data)
+        # print('parsers', request.parsers)
         user = Users.objects.filter(username=username).count()
         res = {
             'username': username,
