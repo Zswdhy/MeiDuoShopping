@@ -6,6 +6,7 @@ from django.contrib.auth.models import AbstractUser
 
 class Users(AbstractUser):
     mobile = models.CharField(max_length=11, unique=True, verbose_name='手机号码')
+    email_active = models.BooleanField(default=False, verbose_name='邮箱记过标识')
 
     class Meta:
         # 配置数据库表明，以及设置模型在admin站点显示的中文名

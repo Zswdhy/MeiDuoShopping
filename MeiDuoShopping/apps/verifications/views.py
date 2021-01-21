@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.views import APIView
 from random import randint
 from django_redis import get_redis_connection
@@ -6,7 +5,6 @@ from rest_framework.response import Response
 import logging
 from rest_framework import status
 from . import constants
-from celery_tasks.sms.tasks import send_sms_code
 
 logger = logging.getLogger('django')
 

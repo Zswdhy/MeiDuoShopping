@@ -3,6 +3,7 @@ from .models import Users
 import re
 from django_redis import get_redis_connection
 from rest_framework_jwt.settings import api_settings
+from django.core.mail import send_mail
 
 
 class CreateUserSerializer(serializers.ModelSerializer):
@@ -82,3 +83,42 @@ class CreateUserSerializer(serializers.ModelSerializer):
         user.token = token
 
         return user
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    """用户详情"""
+
+    class Meta:
+        model = Users
+        fields = ['id', 'username', 'mobile', 'email', 'email_active']
+
+
+class EmailSerializer(serializers.ModelSerializer):
+    """更新邮箱序列化器"""
+
+    class Meta:
+        model = Users
+
+        fields = ['id', 'email']
+
+        # 校验数据
+        extra_kwargs = {
+            'email': {
+                'required': True,  # 必传的值，AbstractUser中email默认可以为空
+            }
+        }
+
+    def update(self, instance, validated_data):
+        """重写此方法的目的不是为了修改，而是借此机会发邮件激活邮箱"""
+        # 若无须修改，直接带哦阿勇此方法就可以
+        # super(EmailSerializer, self).update(instance, validated_data)
+
+        # 手动保存，和上面注释代码功能一致
+        instance.email = validated_data.get('email')
+        instance.save()
+
+        # 发送邮件
+
+
+        # 返回模型实例
+        return instance

@@ -186,7 +186,7 @@ LOGGING = {
         'file': {  # 向文件中输出日志
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(os.path.dirname(BASE_DIR), "logs/meiduo.log"),  # 日志文件的位置
+            'filename': os.path.join(os.path.dirname(BASE_DIR), "MeiDuoShopping/logs/meiduo.log"),  # 日志文件的位置
             'maxBytes': 300 * 1024 * 1024,
             'backupCount': 10,
             'formatter': 'verbose'
@@ -205,6 +205,17 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'MeiDuoShopping.utils.exceptions.exception_handler',
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticated',
+    # ],
+
+    # jwt 认证
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',  # 准入
+        "rest_framework.authentication.BasicAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+    ],
 }
 
 # 修改 RRF 认证系统的用户模型
@@ -221,3 +232,9 @@ JWT_AUTH = {
 
 # 修改Django用户认证后端类 实现多账号登陆 使用自定义的类别
 AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileAuthBackend']
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = '760766146@qq.com'  # 帐号
+EMAIL_HOST_PASSWORD = 'bxwhvykavnnbbbhh'  # 密码
