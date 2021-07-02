@@ -118,7 +118,5 @@ class EmailSerializer(serializers.ModelSerializer):
         instance.save()
 
         # 发送邮件
-
-
         # 返回模型实例
         return instance

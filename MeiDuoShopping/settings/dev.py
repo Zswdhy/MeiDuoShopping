@@ -233,7 +233,6 @@ JWT_AUTH = {
 # 修改Django用户认证后端类 实现多账号登陆 使用自定义的类别
 AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileAuthBackend']
 
-# 邮箱配置
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.qq.com'
 EMAIL_PORT = 25
